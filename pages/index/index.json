@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "basics": "/pages/basics/home/home",
+    "msg": "/pages/msg/home/home",
+    "info": "/pages/info/home/home",
+    "my": "/pages/my/home/home"
+  }
+}

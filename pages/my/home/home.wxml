@@ -1,0 +1,49 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="bg-head"></view>
+  <view class="UCenter-bg">
+    <image src="{{myEntity.avatar}}" class="png" mode="widthFix" style="margin-top:150rpx"></image>
+    <view class="text-xl">{{myEntity.username}}</view>
+    <view class="margin-top-sm">
+      <text>{{myEntity.message}}</text>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
+        <text class="cuIcon-repairfill text-grey"></text>
+        <text class="text-grey">工具箱</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <image style="margin-left:6rpx;height:36rpx;width:36rpx;" src="/images/my/cloud.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey" style="margin-left:6rpx;">云服务订阅</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-likefill text-green"></text>
+        <text class="text-grey">体验中心</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-service text-red"></text>
+        <text class="text-grey">联系客服</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">帮助与反馈</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-info text-orange"></text>
+        <text class="text-grey">关于</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

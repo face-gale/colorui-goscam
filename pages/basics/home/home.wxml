@@ -1,0 +1,28 @@
+
+<view class="container">
+  <view class="bg-img padding-tb-xl bg-scroll" 
+  style="background-image: url('/images/homeBg.png');">
+      <view style="height:140rpx;"></view>
+      <scroll-view scroll-y class="scrollPage">
+        <view class='nav-list'>
+          <navigator style="margin: 10rpx 0rpx 10rpx" open-type="navigate" 
+          hover-class='none' url="/pages/basics/{{item.name}}/{{item.name}}" 
+          class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+            <view class="nav-title" style="color:{{item.fontColor}}">{{item.title}}</view>
+            <text class='cuIcon-{{item.icon}}' style="color:{{item.iconColor}}"></text>
+          </navigator>
+        </view>
+        <view class='scroll-title'>
+          <text>{{devTitle}}</text>
+        </view>
+        <view class="scroll-device">
+          <view class="device-tab" wx:for="{{deviceList}}" wx:key>
+           <view class="tab-title">
+            <text>{{item.tabTitle}}</text>
+           </view>
+           <video class="tab-video" src="{{item.tabUrl}}"></video>
+          </view>
+        </view>
+      </scroll-view>
+  </view>
+</view>

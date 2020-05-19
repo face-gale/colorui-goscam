@@ -1,6 +1,6 @@
 Component({
   options: {
-    addGlobalClass: true,
+    addGlobalClass: true
   },
   /**
    * 页面的初始数据
@@ -9,9 +9,11 @@ Component({
     TabCur: 0,
     scrollLeft:0,
     tabList: [{
+      id: 0,
       title: '系统消息',
       url: ''
     },{
+      id: 1,
       title: '警告信息',
       url: ''
     }]

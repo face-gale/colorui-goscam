@@ -1,8 +1,10 @@
-<cu-custom bgColor="bg-white"><view slot="content">消息</view></cu-custom>
-<scroll-view scroll-x class="bg-white nav" style="height:102rpx;" scroll-with-animation scroll-left="{{scrollLeft}}">
-  <view class="cu-item {{index==TabCur?'text-green cur':''}}" 
-         wx:for="{{tabList}}" 
-        wx:key bindtap="tabSelect" data-id="{{index}}">
-    {{item.title}}
-  </view>
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgColor="bg-white"><view slot="content">消息</view></cu-custom>
+  <scroll-view scroll-x class="bg-white nav" style="height:102rpx;" scroll-with-animation scroll-left="{{scrollLeft}}">
+    <view class="cu-item {{index==TabCur?'text-blue cur':''}}" 
+          wx:for="{{tabList}}" style="font-size:28rpx;"
+          wx:key="index" bindtap="tabSelect" data-id="{{index}}">
+      {{item.title}}
+    </view>
+  </scroll-view>
 </scroll-view>

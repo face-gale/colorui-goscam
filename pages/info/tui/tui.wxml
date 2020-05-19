@@ -1,0 +1,29 @@
+<view class="tui-body">
+    <!-- 轮播图 -->
+    <swiper class="round-dot tui-swiper" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image style="width: 686rpx;" src="{{item.url}}" mode="scaleToFill" wx:if="{{item.type=='image'}}"></image>
+      </swiper-item>
+    </swiper>
+    <view>
+      <!-- 标题 -->
+      <view class="tab-title">
+      <text>{{tabTitle}}</text>
+      </view>
+      <!-- 资讯列表 -->
+      <view class="tab-list" wx:for="{{tabList}}" wx:key="id">
+        <!-- 左部 -->
+        <view class="tab-left">
+          <text>{{item.tabContent}}</text>
+          <!-- 左下部 -->
+          <view class="tab-left-down">
+            <text>{{item.time}}</text>
+            <text class="cuIcon-attention text-grey" style="margin-left:40rpx;"></text>
+            <text style="margin-left:12rpx;">{{item.num}}</text>
+          </view>
+        </view>
+        <!-- 右部 -->
+        <image class="tab-right" src="{{item.imgSrc}}" mode="aspectFill"></image>
+      </view>
+    </view>
+</view>

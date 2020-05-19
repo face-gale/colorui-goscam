@@ -1,3 +1,7 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "tui": "/pages/info/tui/tui",
+    "xuan": "/pages/info/xuan/xuan"
+  } 
 }

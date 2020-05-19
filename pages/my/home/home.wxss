@@ -12,15 +12,6 @@
   color: var(--grey);
   font-weight: 100;
 }
-
-.UCenter-bg text {
-  opacity: 0.8;
-}
-
-.UCenter-bg image {
-  width: 200rpx;
-  height: 200rpx;
-}
 .margin-bottom-xl {
   margin-bottom: 80rpx;
 }

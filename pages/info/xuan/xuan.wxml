@@ -1,0 +1,19 @@
+<view class="tui-body">
+    <view>
+      <!-- 资讯列表 -->
+      <view class="tab-list" wx:for="{{tabList}}" wx:key="id">
+        <!-- 左部 -->
+        <view class="tab-left">
+          <text>{{item.tabContent}}</text>
+          <!-- 左下部 -->
+          <view class="tab-left-down">
+            <text>{{item.time}}</text>
+            <text class="cuIcon-attention text-grey" style="margin-left:40rpx;"></text>
+            <text style="margin-left:12rpx;">{{item.num}}</text>
+          </view>
+        </view>
+        <!-- 右部 -->
+        <image class="tab-right" src="{{item.imgSrc}}" mode="aspectFill"></image>
+      </view>
+    </view>
+</view>

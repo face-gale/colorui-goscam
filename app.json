@@ -4,6 +4,8 @@
     "pages/basics/home/home",
     "pages/msg/home/home",
     "pages/info/home/home",
+    "pages/info/tui/tui",
+    "pages/info/xuan/xuan",
     "pages/my/home/home"
   ],
   "window": {

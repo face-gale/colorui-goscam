@@ -1,0 +1,55 @@
+.tab-right{
+  margin-left: 190rpx;
+  margin-top: 36rpx;
+  width: 160rpx;
+  height: 134rpx;
+}
+.tab-left-down{
+  height: 32rpx;
+  margin-top: 24rpx;
+  text-align: left;
+  font-size:20rpx;
+  color: rgba(102, 102, 102, 1);
+}
+.tab-left{
+  margin-left: 0rpx;
+  margin-top: 40rpx;
+  width: 350rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.tab-list{
+  position: relative;
+  flex-wrap: nowrap;
+  display: flex;
+  margin-left: 0rpx;
+  margin-top: 20rpx;
+  width: 686rpx;
+  height: 224rpx;
+  line-height: 40rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: center;
+  font-family: Arial;
+  border: 2rpx solid rgba(255, 255, 255, 0);
+}
+.tab-title{
+  margin-left: 0rpx;
+  margin-top: 60rpx;
+  width: 112rpx;
+  height: 44rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.tui-swiper{
+  width: 686rpx;
+  height: 240rpx;
+}
+.tui-body{
+  width:686rpx;
+  margin-left:32rpx;
+}

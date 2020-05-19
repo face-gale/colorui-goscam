@@ -40,16 +40,6 @@
   background: rgb(94, 185, 94);
   box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
 }
-.nav-li text {
-  position: absolute;
-  right: 30rpx;
-  top: 30rpx;
-  font-size: 52rpx;
-  width: 60rpx;
-  height: 60rpx;
-  text-align: center;
-  line-height: 60rpx;
-}
 .tab-video{
   margin-left: 20rpx;
   margin-top: 20rpx;

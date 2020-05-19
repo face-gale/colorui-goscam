@@ -1,22 +1,26 @@
 Component({
   options: {
-    addGlobalClass: true,
+    addGlobalClass: true
   },
   data: {
     devTitle: '我的设备',
     deviceList:[
       {
         tabTitle: 'Goscam摄像头介绍',
-        tabUrl: ''
+        tabMode: 0,
+        tabUrl: 'https://test.m.sinopaypal.cn/jypx/theme/ces.mp4'
       },{
         tabTitle: 'Goscam摄像头操作演示',
-        tabUrl: ''
+        tabMode: 0,
+        tabUrl: 'https://test.m.sinopaypal.cn/jypx/theme/ces.mp4'
       },{
         tabTitle: 'Goscam摄像头操作演示2',
-        tabUrl: ''
+        tabMode: 1,
+        tabUrl: 'https://test.m.sinopaypal.cn/jypx/theme/ces.mp4'
       },{
         tabTitle: 'Goscam摄像头操作演示3',
-        tabUrl: ''
+        tabMode: 1,
+        tabUrl: 'https://test.m.sinopaypal.cn/jypx/theme/ces.mp4'
       }
     ],
     elements: [{
@@ -36,5 +40,13 @@ Component({
         iconColor: 'red'
       }
     ],
+  },
+  methods: {
+    statechange(e) {
+      console.log('live-player code:', e.detail.code)
+    },
+    error(e) {
+      console.error('live-player error:', e.detail.errMsg)
+    }
   }
 })

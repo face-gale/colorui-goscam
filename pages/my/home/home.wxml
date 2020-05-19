@@ -1,7 +1,8 @@
 <scroll-view scroll-y class="scrollPage">
   <view class="bg-head"></view>
   <view class="UCenter-bg">
-    <image src="{{myEntity.avatar}}" class="png" mode="widthFix" style="margin-top:150rpx"></image>
+    <image src="{{myEntity.avatar}}" class="png" mode="widthFix" 
+    style="margin-top:150rpx;width:200rpx;height:200rpx;"></image>
     <view class="text-xl">{{myEntity.username}}</view>
     <view class="margin-top-sm">
       <text>{{myEntity.message}}</text>

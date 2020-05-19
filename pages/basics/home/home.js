@@ -12,7 +12,7 @@ Component({
       },{
         tabTitle: 'Goscam摄像头操作演示',
         tabMode: 0,
-        tabUrl: 'https://test.m.sinopaypal.cn/jypx/theme/ces.mp4'
+        tabUrl: ''
       },{
         tabTitle: 'Goscam摄像头操作演示2',
         tabMode: 1,
